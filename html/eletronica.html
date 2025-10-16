@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/" type="image/x-icon">
+    <script src="../script.js"defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,18 +33,135 @@
     <main>          
         <div class="card primeiro">
             <div class="text">
-                    <h2>Situação de Aprendizagem</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis, unde ut, maiores incidunt error aut aspernatur eveniet quae quisquam harum atque architecto deleniti molestiae, beatae facere ipsa molestias saepe.</p>
+                <h2>Componentes Eletronicos Empregados</h2>
+                <ul>
+                    <li>
+                        <p><strong>Resistores: </strong>O resistor é um componente que limita ou controla a passagem de corrente elétrica em um circuito, ele serve para proteger outros componentes, ajustar níveis de tensão e controlar o fluxo de elétrons.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><strong>Diodo LED:</strong> O LED (Light Emitting Diode) é um tipo de diodo que emite luz quando a corrente passa por ele no sentido correto. Além de iluminar, é muito usado como indicador de funcionamento em equipamentos eletrônicos.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><strong>Transistor:</strong> O transistor funciona como um interruptor eletrônico ou amplificador de sinal, ele controla a passagem de corrente entre dois terminais com base em um terceiro terminal.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><strong>Circuito Integrado:</strong> O Circuito Integrado é um pequeno chip que reúne vários componentes eletrônicos (transistores, resistores, capacitores, etc.) em um só lugar, ele realiza funções complexas como processamento, controle e armazenamento de dados.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h2>Sensores Empregados em Sistemas Automatizados</h2>
+                <p>Os sensores empregados em sistemas automatizados são dispositivos que detectam e medem diferentes variáveis do ambiente, permitindo que máquinas e equipamentos reajam automaticamente às condições ao seu redor, existindo diversos tipos, sendo eles: </p>
+                <br>
+                <ul>
+                    <li>
+                        <p><strong>Sensor de Temperatura:</strong> Utilizado para medir o calor ou frio de um ambiente, sendo muito aplicado em ar-condicionados, geladeiras, estufas e sistemas industriais</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><strong>Sensor de Umidade:</strong> Mede o nível de umidade do ar ou do solo, sendo comum em estufas agrícolas, ar-condicionados e estações meteorológicas</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><strong>Sensor de Luminosidade:</strong> Detecta a intensidade da luz, permitindo o controle automático de lâmpadas e cortinas, otimizando o consumo de energia.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><strong>Sensor de Movimento:</strong> Identifica quando há pessoas ou objetos próximos, sendo essencial em alarmes, portas automáticas e sistemas de iluminação inteligente</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><strong>Sensor de Pressão:</strong> Mede a força exercida sobre uma superfície e é usado em pneus, sistemas hidráulicos e equipamentos médicos</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><strong>Sensor de Gás:</strong> detecta a presença de gases como monóxido de carbono ou metano, sendo muito importante em sistemas de ventilação e alarmes contra vazamentos</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h2>O que é o Arduino?</h2>
+                <p>O Arduino é uma plataforma de prototipagem eletrônica de código aberto (open source), composta por placas com microcontroladores e um ambiente de programação próprio. Ele permite criar e testar projetos que envolvem eletrônica e automação de forma simples e acessível, mesmo para iniciantes.</p><br>
+                <p>Ele serve para controlar dispositivos eletrônicos, como motores, sensores, LEDs e outros componentes, por meio de comandos programados no computador. É muito usado em projetos educacionais, automação residencial, robótica, sistemas industriais, monitoramento ambiental e até em dispositivos de Internet das Coisas (IoT).</p><br>
+                <p>Temos como vantagens dele o baixo custo, a facilidade de uso, o grande suporte da comunidade online, e o fato de ser compatível com diversos tipos de sensores e módulos, mas por outro lado, o Arduino também possui algumas desvantagens. Ele tem limitações de processamento e memória, o que dificulta seu uso em projetos muito complexos ou que exigem alta velocidade. Além disso, por ser aberto e simples, pode ser menos robusto do que sistemas profissionais utilizados na indústria</p><br>
+                <h2>O que é Eletronica Embarcada?</h2>
+                <p>A eletrônica embarcada (ou eletrônica embarcada em sistemas) é o ramo da tecnologia que estuda e desenvolve sistemas eletrônicos integrados em equipamentos ou máquinas, para que eles possam realizar funções automáticas de forma inteligente. Esses sistemas unem hardware (placas, sensores, circuitos) e software (programas que controlam o funcionamento), eles estão presentes em diversos dispositivos do dia a dia, como carros, televisores, drones, máquinas industriais, celulares, eletrodomésticos e inclusive nos Arduinos</p>
+                <br>
+                <h2>Qual a linguagem de Programação usada em sua IDE?</h2>
+                <p>A linguagem de programação do Arduino é uma variação simplificada do C/C++, criada para tornar o desenvolvimento de projetos eletrônicos mais acessível e intuitivo. Ela combina a eficiência e o controle do C/C++ com uma sintaxe simplificada, permitindo que iniciantes entendam rapidamente como programar microcontroladores sem se preocupar com detalhes complexos de compilação ou gestão de memória.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                <h2>O que são entradas e saídas digitais em circuitos integrados?</h2>
+                <p>As entradas e saídas digitais (também chamadas de pinos digitais) são os pontos do Arduino usados para se comunicar com o mundo externo — ou seja, para receber informações e enviar comandos a outros dispositivos.</p>
+                <br>
+                <ul>
+                    <li>
+                        <p><strong>Entrada Digital:</strong> Serve para receber sinais elétricos vindos de sensores, botões ou outros circuitos. Esses sinais só têm dois estados possíveis: ligado (1) e desligado (0) — ou, em termos elétricos, alta tensão (geralmente 5V ou 3,3V) e baixa tensão (0V). Por exemplo, quando um botão é pressionado, o Arduino “lê” um sinal 1; quando solto, “lê” um 0.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><strong>Saida Digital:</strong> Usada para enviar sinais que controlam outros componentes, como LEDs, motores, relés ou buzzers. Assim, o Arduino pode “mandar” um sinal ligar (1) ou desligar (0), fazendo o dispositivo conectado reagir conforme o programa determina.</p>
+                    </li>
+                </ul>
+                <br>
+                <p>Essas entradas e saídas são chamadas de digitais porque só reconhecem ou produzem dois estados lógicos, diferentes das entradas e saídas analógicas.</p><br>
+                <h2>Mas então, o que são as Analogicas?</h2>
+                <p>As entradas e saídas analógicas são pinos usados para ler e gerar sinais elétricos que variam de forma contínua, diferentemente dos sinais digitais, que só possuem dois estados (ligado ou desligado).</p>
+                <br>
+                <ul>
+                    <li>
+                        <p><strong>Entrada Analogica:</strong> Serve para medir valores variáveis de tensão elétrica, isso permite ao Arduino interpretar informações mais detalhadas vindas de sensores, como temperatura, luminosidade, som ou umidade, que não se limitam a apenas dois estados</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><strong>Saida Analogica</strong> É usada para enviar sinais variáveis, controlando dispositivos de maneira gradual, como por exemplo, regular a intensidade de um LED, a velocidade de um motor ou a posição de um servo</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="scripts">
+            <div class="text">
+                <h2>Scripts Praticos de Eletronica!</h2>
+            </div>
+            <div class="leiOHM">
+                <p style="text-align: center; font-size: 18px;">Calculadora de Lei de OHM</p>
+                <p>O que você deseja calcular?</p>
+                <select id="select-lei">
+                    <option value="" disabled selected>Selecione uma Opção</option>
+                    <option value="tensao">Tensão</option>
+                    <option value="corrente">Corrente</option>
+                    <option value="resistencia">Resistência</option>
+                </select>
+                <section id="tensao">
+                    <label for="corrente">Digite a </label>
+                </section>
+                <section id="corrente">
+                    <h2>corrente</h2>
+                    
+                </section>
+                <section id="resistencia">
+                    <h2>resistencia</h2>
+
+                </section>
             </div>
         </div>
     </main>
     <footer>
-        <!-- <div class="contatos">
+        <div class="contatos">
             <div class="contato-item">
                 <a href="https://github.com/EnzoHipolito" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                 <p>Desenvolvido por: Enzo dos Santos Hipolito</p>
                 <p><span class="email">enzohipolito7@gmail.com</span></p>
-            </div> -->
+            </div>
     </footer>
 </body>
 </html>

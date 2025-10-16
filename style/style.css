@@ -85,7 +85,7 @@ main p{
     border-radius: 16px;
     margin: 2rem auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     text-align: left;
     background-color: white;
@@ -95,15 +95,12 @@ main p{
     margin-top: 7rem;
 }
 
-.card h2{
-    text-align: center;
-}
-
 .card.alternate {
     background-color: #e4e7ec;
 }
 
 .text h2 {
+    text-align: center;
     font-size: 1.5rem;
     margin-bottom: 15px;
     color: #0066cc;
@@ -113,6 +110,49 @@ main p{
 .text p {
     font-size: 1rem;
     line-height: 1.5;
+}
+
+.text ul li p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.scripts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 25px;
+    border-radius: 16px;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 1100px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    text-align: left;
+    background-color: white;
+}
+
+.leiOHM{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 25px;
+    border-radius: 16px;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    text-align: left;
+    background-color: rgb(224, 224, 224);
+}
+
+section{
+    display: none;
+}
+
+section.active{
+    display: block;
 }
 
 /* CONTATOS */
