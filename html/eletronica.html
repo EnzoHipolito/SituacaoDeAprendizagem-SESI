@@ -138,11 +138,11 @@
                     <p>O que você deseja calcular?</p>
                     <select id="select-lei">
                         <option value="" disabled selected>Selecione uma Opção</option>
-                        <option value="tensao">Tensão</option>
-                        <option value="corrente">Corrente</option>
-                        <option value="resistencia">Resistência</option>
+                        <option value="tensaoV">Tensão</option>
+                        <option value="correnteV">Corrente</option>
+                        <option value="resistenciaV">Resistência</option>
                     </select>
-                    <section id="tensao">
+                    <section id="tensaoV">
                         <label for="corrente">Digite o valor da Corrente:</label>
                         <input type="number" id="corrente"><br>
                         <label for="resistencia">Digite o valor da Resistencia:</label>
@@ -150,15 +150,15 @@
                         <button onclick="principalOHM()">Calcular</button>
                         <div id="res"></div>
                     </section>
-                    <section id="corrente">
-                        <label for="corrente">Digite o valor da tensao:</label>
+                    <section id="correnteV">
+                        <label for="corrente">Digite o valor da Tensao:</label>
                         <input type="number" id="tensao"><br>
                         <label for="resistencia">Digite o valor da Resistencia:</label>
                         <input type="number" id="resistencia"><br>
                         <button onclick="principalOHM()">Calcular</button>
                         <div id="res"></div>
                     </section>
-                    <section id="resistencia">
+                    <section id="resistenciaV">
                         <label for="corrente">Digite o valor da Tensão:</label>
                         <input type="number" id="tensao"><br>
                         <label for="resistencia">Digite o valor da Corrente:</label>
@@ -170,12 +170,19 @@
                 <div class="script potencia">
                     <p style="text-align: center; font-size: 18px;">Calculadora de Potencia</p>
                         <label for="corrente">Digite o valor da Tensão:</label>
-                        <input type="number" id="tensaoP"><br>
+                        <input type="number" id="tensaoP">
                         <label for="resistencia">Digite o valor da Corrente:</label>
-                        <input type="number" id="correnteP"><br>
+                        <input type="number" id="correnteP">
                         <button onclick="principalP()">Calcular</button>
                         <div id="resP"></div>
                 </div>
+            </div>
+            <div class="script leituraD">
+                <p style="text-align: center; font-size: 18px;">Leitura de Dados de um Sensor</p>
+                    <label for="sensor">Digite o nivel/valor do sensor: </label>
+                    <input type="number" id="sensor">
+                    <button onclick="principalLD()">Executar</button>
+                    <div id="resLD"></div>
             </div>
         </div>
     </main>

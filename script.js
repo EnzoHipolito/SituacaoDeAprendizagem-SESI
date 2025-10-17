@@ -1,6 +1,7 @@
 const select = document.getElementById('select-lei');
 const res = document.getElementById('res');
 const resP = document.getElementById('resP');
+const resLD = document.getElementById('resLD');
 
 select.addEventListener('change', () => {
     const valor = select.value;
@@ -55,4 +56,20 @@ function principalP(){
     potencia = tensaoP * correnteP
     
     resP.innerHTML += `O valor da potencia é de: ${potencia}`
+}
+
+function principalLD(){
+    let sensor = Number(document.getElementById('sensor').value)
+
+    resLD.innerHTML = ''
+
+    if(sensor > 0 && sensor <= 306.9){
+        resLD.innerHTML += `Pouca intensidade`
+    }
+    if(sensor > 306.9 && sensor <= 716.1){
+        resLD.innerHTML += `Media intensidade`
+    }
+    if(sensor > 716.1 ){
+        resLD.innerHTML += `Alta intensidade`
+    }
 }

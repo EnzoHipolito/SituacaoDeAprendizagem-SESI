@@ -121,7 +121,7 @@ main p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 18px;
+    gap: 16px;
     padding: 25px;
     border-radius: 16px;
     margin: 2rem auto;
@@ -141,15 +141,20 @@ main p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 18px;
+    gap: 10px;
     padding: 25px;
     border-radius: 16px;
-    margin: 2rem auto;
+    margin: 0.5rem auto;
     width: 100%;
     max-width: 400px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     text-align: left;
     background-color: rgb(224, 224, 224);
+}
+
+.script.leituraD{
+    display: flex;
+    align-items: center;
 }
 
 section{
@@ -165,7 +170,7 @@ button{
     width: 90px;
     font-size: 1.2rem;
     border: 0;
-    border-radius: 16px;
+    border-radius: 12px;
     background-color: #0066cc;
     color: white;
     padding: 5px;
