@@ -128,34 +128,54 @@
                 </ul>
             </div>
         </div>
-        <div class="scripts">
+        <div class="container-scripts">
             <div class="text">
                 <h2>Scripts Praticos de Eletronica!</h2>
             </div>
-            <div class="leiOHM">
-                <p style="text-align: center; font-size: 18px;">Calculadora de Lei de OHM</p>
-                <p>O que você deseja calcular?</p>
-                <select id="select-lei">
-                    <option value="" disabled selected>Selecione uma Opção</option>
-                    <option value="tensao">Tensão</option>
-                    <option value="corrente">Corrente</option>
-                    <option value="resistencia">Resistência</option>
-                </select>
-                <section id="tensao">
-                    <label for="corrente">Digite o valor da Corrente:</label>
-                    <input type="number" id="corrente"><br>
-                    <label for="resistencia">Digite o valor da Resistencia:</label>
-                    <input type="number" id="resistencia"><br>
-                    <button onclick="principalOHM()">Calcular</button>
-                </section>
-                <section id="corrente">
-                    <h2>corrente</h2>
-                    
-                </section>
-                <section id="resistencia">
-                    <h2>resistencia</h2>
-
-                </section>
+            <div class="scripts">
+                <div class="script leiOHM">
+                    <p style="text-align: center; font-size: 18px;">Calculadora de Lei de OHM</p>
+                    <p>O que você deseja calcular?</p>
+                    <select id="select-lei">
+                        <option value="" disabled selected>Selecione uma Opção</option>
+                        <option value="tensao">Tensão</option>
+                        <option value="corrente">Corrente</option>
+                        <option value="resistencia">Resistência</option>
+                    </select>
+                    <section id="tensao">
+                        <label for="corrente">Digite o valor da Corrente:</label>
+                        <input type="number" id="corrente"><br>
+                        <label for="resistencia">Digite o valor da Resistencia:</label>
+                        <input type="number" id="resistencia"><br>
+                        <button onclick="principalOHM()">Calcular</button>
+                        <div id="res"></div>
+                    </section>
+                    <section id="corrente">
+                        <label for="corrente">Digite o valor da tensao:</label>
+                        <input type="number" id="tensao"><br>
+                        <label for="resistencia">Digite o valor da Resistencia:</label>
+                        <input type="number" id="resistencia"><br>
+                        <button onclick="principalOHM()">Calcular</button>
+                        <div id="res"></div>
+                    </section>
+                    <section id="resistencia">
+                        <label for="corrente">Digite o valor da Tensão:</label>
+                        <input type="number" id="tensao"><br>
+                        <label for="resistencia">Digite o valor da Corrente:</label>
+                        <input type="number" id="corrente"><br>
+                        <button onclick="principalOHM()">Calcular</button>
+                        <div id="res"></div>
+                    </section>
+                </div>
+                <div class="script potencia">
+                    <p style="text-align: center; font-size: 18px;">Calculadora de Potencia</p>
+                        <label for="corrente">Digite o valor da Tensão:</label>
+                        <input type="number" id="tensaoP"><br>
+                        <label for="resistencia">Digite o valor da Corrente:</label>
+                        <input type="number" id="correnteP"><br>
+                        <button onclick="principalP()">Calcular</button>
+                        <div id="resP"></div>
+                </div>
             </div>
         </div>
     </main>

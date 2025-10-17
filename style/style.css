@@ -117,7 +117,7 @@ main p{
     line-height: 1.5;
 }
 
-.scripts{
+.container-scripts{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,7 +132,12 @@ main p{
     background-color: white;
 }
 
-.leiOHM{
+.scripts{
+    display: flex;
+    flex-direction: row;
+}
+
+.script{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,8 +221,8 @@ button:hover{
     font-size: 12px;
     color: rgb(220, 220, 220);
 } 
-/* MEDIA QUERIES */
 
+/* MEDIA QUERIES */
 @media (min-width: 410px) {
     .navigation a{
         font-size: 0.9rem;
