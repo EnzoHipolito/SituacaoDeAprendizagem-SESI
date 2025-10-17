@@ -18,3 +18,7 @@ select.addEventListener('change', () => {
         history.pushState({}, "", window.location.pathname);
     }
 });
+
+function principalOHM(){
+    
+}
