@@ -135,6 +135,7 @@ main p{
 .scripts{
     display: flex;
     flex-direction: row;
+    gap: 0px;
 }
 
 .script{
@@ -249,23 +250,9 @@ button:hover{
     }
 }
 
-@media (min-width: 600px) {
-    .robot-card.alternate,
-    .robot-card{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .div-titulo{
-        height: 700px;
-    }
-
-    .div-titulo title {
-        font-size: 2.2rem;
-        
-    }
-
-    .div-titulo section p {
-        font-size: 1.1rem;
+@media (max-width: 860px){
+    .scripts{
+        flex-direction: column;
+        gap: 15px;
     }
 }
