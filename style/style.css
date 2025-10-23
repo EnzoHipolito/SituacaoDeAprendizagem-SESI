@@ -99,6 +99,11 @@ main p{
     background-color: #e4e7ec;
 }
 
+.card.img{
+    max-width: 1350px;
+    border-radius: 32px;
+}
+
 .text h2 {
     text-align: center;
     font-size: 1.5rem;
@@ -181,6 +186,18 @@ button{
 
 button:hover{
     transform: scale(1.05);
+}
+
+.anexos{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 32px; 
+    margin-top: 16px;
+}
+
+.anexos img{
+    width: 350px;
 }
 
 /* CONTATOS */
