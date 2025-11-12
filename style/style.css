@@ -245,6 +245,56 @@ button:hover{
     color: rgb(220, 220, 220);
 } 
 
+.sideeBar{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    top: 90px;
+    right: 0;
+    width: auto;
+    z-index: 1;
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    background-color: white;
+    padding: 5px;
+}
+
+.sideeBar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* empurra o bloco do nav pra direita */
+    gap: 10px;
+}
+
+.sideeBar nav a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* texto e ícone ficam à esquerda dentro do link */
+    width: 200px; /* ou o tamanho que quiser */
+    text-align: left; /* garante que o texto dentro do link fique à esquerda */
+}
+
+.sideeBar.active{
+    display: flex;
+}
+
+.menu-icon {
+    width: 35px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.bar {
+    display: none;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    margin: 6px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 410px) {
     .navigation a{
@@ -271,5 +321,14 @@ button:hover{
     .scripts{
         flex-direction: column;
         gap: 15px;
+    }
+}
+
+@media (max-width: 1070px){
+    .navigation{
+        display: none;
+    }
+    .bar{
+        display: block;
     }
 }

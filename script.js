@@ -2,6 +2,12 @@ const select = document.getElementById('select-lei');
 const res = document.getElementById('res');
 const resP = document.getElementById('resP');
 const resLD = document.getElementById('resLD');
+const menuBtn = document.getElementById('menuBtn');
+const sideBar = document.getElementById('sideBar');
+
+menuBtn.addEventListener('click', () => {
+    sideBar.classList.toggle('active');
+})
 
 select.addEventListener('change', () => {
     const valor = select.value;
@@ -63,6 +69,9 @@ function principalLD(){
 
     resLD.innerHTML = ''
 
+    if(sensor < 0 || sensor > 1023){
+        resLD.innerHTML += `Você deve digitar um valor entre 0 a 1023!`
+    }
     if(sensor > 0 && sensor <= 306.9){
         resLD.innerHTML += `Pouca intensidade`
     }
