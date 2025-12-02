@@ -49,8 +49,88 @@
     <main>          
         <div class="card primeiro">
             <div class="text">
-                    <h2>Situação de Aprendizagem</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis, unde ut, maiores incidunt error aut aspernatur eveniet quae quisquam harum atque architecto deleniti molestiae, beatae facere ipsa molestias saepe.</p>
+                    <h2>O que são linguagens de programação?</h2>
+                    <p><strong>Linguagens de programação</strong> são conjuntos de regras e comandos usados para criar programas e sistemas. Elas permitem que o programador escreva instruções para que o computador execute tarefas, resolva problemas ou interaja com o usuário. <br><br>
+                    <ul>
+                        <li><strong>C++:</strong> É uma linguagem rápida e poderosa, muito usada em sistemas que precisam de alto desempenho, como jogos, sistemas embarcados, aplicações gráficas, softwares de engenharia e até sistemas operacionais.</li> <br>
+                        <li><strong>JavaScript</strong> Linguagem muito usada no desenvolvimento web, especialmente para criar interatividade em sites. Hoje também é utilizada no back-end através do Node.js, além de aplicações mobile e desktop.</li><br>
+                        <li><strong>Java:</strong> Uma das linguagens mais populares do mundo. É muito usada em grandes sistemas empresariais, aplicativos Android e sistemas bancários. Seu lema é “escreva uma vez, rode em qualquer lugar”.</li><br>
+                        <li><strong>Python:</strong> Linguagem simples e fácil de aprender. É usada em inteligência artificial, análise de dados, automação, web, ciência de dados e scripts em geral. É conhecida pela clareza e simplicidade.</li><br>
+                        <li><strong>PHP:</strong> Linguagem muito usada para desenvolvimento web, principalmente no back-end. Alimenta boa parte dos sites do mundo, incluindo o WordPress. Excelente para criar sistemas dinâmicos.</li>
+                    </ul></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                    <h2>O que são linguagens de programação interpretada e compilada?</h2>
+                    <p><strong>Linguagens Interpretada</strong> é aquela em que o código é executado linha por linha por um interpretador,
+                    não gera um arquivo executável final o interpretador precisa estar presente, tendo como exemplo o <strong>Python</strong>, <strong>JavaScript</strong> e o <strong>PHP</strong> <br><br>
+                    <strong>Linguagens Compilada</strong> é aquela em que o código é convertido de uma vez em um arquivo executável pelo compilador,
+                    esse arquivo roda diretamente no computador sem precisar do código-fonte, tendo como exemplo o <strong>C</strong>, <strong>C++</strong> e o <strong>Java</strong>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                    <h2>O que são linguagens de programação interpretada e compilada?</h2>
+                    <p><strong>HTML5</strong> é a linguagem usada para estruturar o conteúdo de páginas web,
+                    Define títulos, textos, imagens, tabelas, links e toda a parte estrutural do site.<br><br>
+                    <strong>CSS3</strong> é a linguagem usada para estilizar páginas web,
+                    Define cores, fontes, tamanhos, posicionamentos e aparência visual da página.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text">
+                    <h2>O que é uma IDE?</h2>
+                    <p>É um software que reúne diversas ferramentas essenciais para o desenvolvimento de aplicações em uma única interface gráfica do usuário (GUI), ele é como um editor de texto, usado por todos os programadores para programar e tambem rodar alguns dos programas feitos, o exemplo mais famoso de IDE é o <strong>Visual Studio Code (VSCode)</strong></p>
+            </div>
+        </div>
+        <div class="container-scripts">
+            <div class="text">
+                <h2>Scripts de Exemplo de Programação!</h2>
+            </div>
+            <div class="scriptsP">
+                <div class="script ordenar">
+                    <p style="text-align: center; font-size: 18px;">Ordenar Numeros</p>
+                    <button onclick="ordenarNumeros()">Executar</button>
+                    <div id="resOrdenar"></div>
+                </div>
+                <div class="script potencia">
+                    <p style="text-align: center; font-size: 18px;">Ordenação BubbleSort</p>
+                    <button onclick="BubbleSort()">Executar</button>
+                    <div id="resBubble"></div>
+                </div>
+            </div>
+            <div class="scriptsP">
+                <div class="script ordenar">
+                    <p style="text-align: center; font-size: 18px;">Somar Numeros Aleatorios</p>
+                    <button onclick="somarAleatorios()">Executar</button>
+                    <div id="resSoma"></div>
+                </div>
+                <div class="script potencia">
+                    <p style="text-align: center; font-size: 18px;">Gerar Matriz</p>
+                    <button onclick="gerarMatriz()">Executar</button>
+                    <div id="resMatriz"></div>
+                </div>
+            </div>
+            <div class="scriptsP">
+                <div class="script ordenar">
+                    <p style="text-align: center; font-size: 18px;">Calcular IMC</p>
+                    <label for="altura">Digite sua Altura (Em CM):</label>
+                    <input type="number" id="altura">
+                    <label for="peso">Digite seu peso (Em KG):</label>
+                    <input type="number" id="peso">
+                    <button onclick="calcularIMC()">Calcular</button>
+                    <div id="resIMC"></div>
+                </div>
+                <div class="script potencia">
+                    <p style="text-align: center; font-size: 18px;">Busca Linear</p>
+                    <label for="num">Digite o numero que deseja buscar:</label>
+                    <input type="number" id="num">
+                    <button onclick="BuscaLinear()">Buscar</button>
+                    <div id="resBusca"></div>
+                </div>
             </div>
         </div>
     </main>

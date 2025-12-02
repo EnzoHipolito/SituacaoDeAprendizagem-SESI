@@ -104,6 +104,12 @@ main p{
     border-radius: 32px;
 }
 
+.card.minima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .text h2 {
     text-align: center;
     font-size: 1.5rem;
@@ -143,10 +149,17 @@ main p{
     gap: 0px;
 }
 
+.scriptsP{
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
 .script{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     padding: 25px;
     border-radius: 16px;
