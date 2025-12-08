@@ -260,7 +260,7 @@ button:hover{
 
 .sideeBar{
     display: none;
-    position: absolute;
+    position: fixed;
     justify-content: center;
     top: 90px;
     right: 0;

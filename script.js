@@ -144,6 +144,23 @@ function somarAleatorios() {
     resSoma.innerHTML += `Soma: ${soma}`
 }
 
+function gerarMatriz(){
+    let resMatriz = document.getElementById('resMatriz')
+    let mat = []
+
+    resMatriz.innerHTML = ''
+
+    for(let i = 0; i < 3; i++){
+        mat[i] = []
+        for(let j = 0; j < 3; j++){
+            mat[i][j] = gerarAleatorio(1, 20)
+
+            resMatriz.innerHTML += `${mat[i][j]} |`
+        }
+        resMatriz.innerHTML += `<br>`
+    }
+}
+
 function calcularIMC() {
     let resIMC = document.getElementById("resIMC");
     let altura = Number(document.getElementById("altura").value);
@@ -182,4 +199,25 @@ function converterTemperatura() {
             res.innerHTML = "Digite 'C' ou 'F'.";
         }
     }
+}
+
+function buscaLinear() {
+    let resBusca = document.getElementById("resBusca")
+    let num = Number(document.getElementById("num").value)
+    let arr = [1,3,5,8,10,12,17,20,26,34]
+    
+    resBusca.innerHTML = ''
+
+    if(num <= 0){
+        resBusca.innerHTML += `Você deve digitar apenas números positivos!`
+    }else{
+        let posicao = arr.indexOf(num)
+    
+        if (posicao !== -1) {
+            resBusca.innerHTML += `O número ${num} foi encontrado na posição ${posicao + 1}` 
+        } else {
+            resBusca.innerHTML = "Numero não encontrado"
+        }
+    }
+
 }
