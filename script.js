@@ -45,23 +45,13 @@ function gerarAleatorio(min,max){
 
 function principalOHM(){
     let corrente = Number(document.getElementById('corrente').value)    
-    let tensao = Number(document.getElementById('tensao').value)    
     let resistencia = Number(document.getElementById('resistencia').value)
+    let tensao = 0
     
     res.innerHTML = ''
 
-    if (select.value === 'tensao'){
         tensao = corrente * resistencia
         res.innerHTML += `O valor da tensão é: ${tensao}`
-    }
-    if (select.value === 'corrente'){
-        corrente = tensao / resistencia
-        res.innerHTML += `O valor da corrente é: ${corrente}`
-    }
-    if (select.value === 'resistencia'){
-        resistencia = tensao / corrente
-        res.innerHTML += `O valor da resistencia é: ${resistencia}`
-    }
 }
 
 function principalP(){
@@ -99,17 +89,17 @@ function principalLD(){
 }
 
 function ordenarNumeros() {
-    let resOrdenar = document.getElementById("resOrdenar");
-    let arr = [];
+    let resOrdenar = document.getElementById("resOrdenar")
+    let arr = []
     for (let i = 1; i <= 20; i++) {
-    arr.push(i);
+        arr.push(i)
     }
     resOrdenar.innerHTML = "Crescente: " + arr + "<br>";
-    resOrdenar.innerHTML += "Decrescente: " + arr.slice().reverse();
+    resOrdenar.innerHTML += "Decrescente: " + arr.reverse()
 }
 
 function BubbleSort() {
-    let resBubble = document.getElementById("resBubble");
+    let resBubble = document.getElementById("resBubble")
     let arr = [];
     for (let i = 0; i < 10; i++) {
         arr[i] = gerarAleatorio(1,20)
@@ -118,19 +108,19 @@ function BubbleSort() {
     for (let j = 0; j < arr.length - 1; j++) {
         for (let i = 0; i < arr.length - j - 1; i++) {
             if (arr[i] > arr[i + 1]) {
-                let aux = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = aux;
+                let aux = arr[i]
+                arr[i] = arr[i + 1]
+                arr[i + 1] = aux
             }
         }
     }
 
-    resBubble.innerHTML = "Array ordenado: " + arr;
+    resBubble.innerHTML = "Array ordenado: " + arr
 }
 
 function somarAleatorios() {
-    let resSoma = document.getElementById("resSoma");
-    let arr = [];
+    let resSoma = document.getElementById("resSoma")
+    let arr = []
     let soma = 0
 
     resSoma.innerHTML = ''
@@ -162,17 +152,17 @@ function gerarMatriz(){
 }
 
 function calcularIMC() {
-    let resIMC = document.getElementById("resIMC");
-    let altura = Number(document.getElementById("altura").value);
-    let peso = Number(document.getElementById("peso").value);
+    let resIMC = document.getElementById("resIMC")
+    let altura = Number(document.getElementById("altura").value)
+    let peso = Number(document.getElementById("peso").value)
     let imc = 0
 
     resIMC.innerHTML = ''
 
     if (altura <= 0) {
-        res.innerHTML = "Altura inválida!";
+        res.innerHTML = "Altura inválida!"
     }else if (peso <= 0) {
-        res.innerHTML = "Peso inválido!";
+        res.innerHTML = "Peso inválido!"
     }else{
         imc = peso / (altura * altura)
         resIMC.innerHTML += `IMC: ${imc.toFixed(2)}`
@@ -180,23 +170,23 @@ function calcularIMC() {
 }
 
 function converterTemperatura() {
-    let resTemp = document.getElementById("resTemp");
-    let conversao = document.getElementById("conversao").value.toUpperCase();
-    let temperatura = Number(document.getElementById("temperatura").value);
+    let resTemp = document.getElementById("resTemp")
+    let conversao = document.getElementById("conversao").value.toUpperCase()
+    let temperatura = Number(document.getElementById("temperatura").value)
     
-    res.innerHTML = "";
+    res.innerHTML = ""
 
     if (isNaN(temperatura) || temperatura <= 0) {
-        res.innerHTML = "Temperatura inválida!";
+        res.innerHTML = "Temperatura inválida!"
     }else{
         if (conversao === "C") {
-            let resultado = (temperatura - 32) * (5 / 9);
-            res.innerHTML += `${temperatura} °F = ${resultado.toFixed(2)} °C"`;
+            let resultado = (temperatura - 32) * (5 / 9)
+            res.innerHTML += `${temperatura} °F = ${resultado.toFixed(2)} °C"`
         } else if (conversao === "F") {
-            let resultado = (temperatura * 9 / 5) + 32;
-            res.innerHTML += `${temperatura} °F = ${resultado.toFixed(2)} °C"`;
+            let resultado = (temperatura * 9 / 5) + 32
+            res.innerHTML += `${temperatura} °F = ${resultado.toFixed(2)} °C"`
         } else {
-            res.innerHTML = "Digite 'C' ou 'F'.";
+            res.innerHTML = "Digite 'C' ou 'F'."
         }
     }
 }

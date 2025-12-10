@@ -145,6 +145,15 @@
                 </ul>
             </div>
         </div>
+        <div class="card">
+            <div class="text">
+                <h2>Videos do Arduino</h2>
+                <div style="display: flex; gap: 32px;">
+                    <video src="../img/video1.mp4" controls style="width: 350px;"></video>
+                    <video src="../img/video2.mp4" controls style="width: 350px;"></video>
+                </div>
+            </div>
+        </div>
         <div class="container-scripts">
             <div class="text">
                 <h2>Scripts Praticos de Eletronica!</h2>
@@ -152,34 +161,11 @@
             <div class="scripts">
                 <div class="script leiOHM">
                     <p style="text-align: center; font-size: 18px;">Calculadora de Lei de OHM</p>
-                    <p>O que você deseja calcular?</p>
-                    <select id="select-lei">
-                        <option value="" disabled selected>Selecione uma Opção</option>
-                        <option value="tensaoV">Tensão</option>
-                        <option value="correnteV">Corrente</option>
-                        <option value="resistenciaV">Resistência</option>
-                    </select>
                     <section id="tensaoV">
                         <label for="corrente">Digite o valor da Corrente:</label>
                         <input type="number" id="corrente"><br>
                         <label for="resistencia">Digite o valor da Resistencia:</label>
                         <input type="number" id="resistencia"><br>
-                        <button onclick="principalOHM()">Calcular</button>
-                        <div id="res"></div>
-                    </section>
-                    <section id="correnteV">
-                        <label for="corrente">Digite o valor da Tensao:</label>
-                        <input type="number" id="tensao"><br>
-                        <label for="resistencia">Digite o valor da Resistencia:</label>
-                        <input type="number" id="resistencia"><br>
-                        <button onclick="principalOHM()">Calcular</button>
-                        <div id="res"></div>
-                    </section>
-                    <section id="resistenciaV">
-                        <label for="corrente">Digite o valor da Tensão:</label>
-                        <input type="number" id="tensao"><br>
-                        <label for="resistencia">Digite o valor da Corrente:</label>
-                        <input type="number" id="corrente"><br>
                         <button onclick="principalOHM()">Calcular</button>
                         <div id="res"></div>
                     </section>
